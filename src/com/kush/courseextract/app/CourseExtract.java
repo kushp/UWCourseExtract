@@ -16,7 +16,7 @@ import com.google.gson.JsonParser;
 
 public class CourseExtract {
 
-	private static final String API_KEY = "/* GET API KEY FROM ";
+	private static final String API_KEY = "/* GET API KEY FROM https://api.uwaterloo.ca/ */";
 	
 	private static final String TERM = "1155";
 	private static final String[] SUBJECTS = {"AADMS","AB","ACC","ACINTY","ACTSC","ADMGT","AES","AFM","AHS","AMATH","ANTH","APHYS","APPLS","ARBUS","ARCH","ARCHL","ART","ARTS","ASIAN","ASTRN","AVIA","BASE","BE","BET","BIOL","BME","BOT","BUS","CCIV","CDNST","CEDEV","CHE","CHEM","CHINA","CIVE","CLAS","CM","CMW","CO","COGSCI","COMM","COMPT","COMST","CONST","COOP","CROAT","CS","CT","CULMG","CULT","DAC","DANCE","DEI","DES","DEVIS","DM","DRAMA","DUTCH","EARTH","EASIA","EBUS","ECE","ECON","EFAS","ELE","ELPE","EMLS","ENBUS","ENGL","ENVE","ENVS","ERS","ESL","EVSY","FILM","FINAN","FINE","FR","FRCS","GBDA","GEMCC","GENE","GEOE","GEOG","GEOL","GER","GERON","GGOV","GLOBAL","GRAD","GRK","GS","HEBRW","HIST","HLTH","HRCS","HRM","HS","HSG","HUMSC","HUNGN","IFS","INDEV","INTEG","INTERN","INTST","INTTS","IS","ISS","ITAL","ITALST","JAPAN","JS","KIN","KOREA","KPE","LANG","LAT","LATAM","LED","LS","LSC","MATBUS","MATH","ME","MEDST","MEDVL","MENV","MES","MI","MISC","MNS","MSCI","MSE","MTE","MTHEL","MUSIC","NANO","NATST","NE","NES","OPTOM","PACS","PAS","PD","PDARCH","PDENG","PDPHRM","PED","PERST","PHARM","PHIL","PHS","PHYS","PLAN","PMATH","POLSH","PORT","PS","PSCI","PSYCH","QIC","REC","REES","RELC","RS","RSCH","RUSS","SCBUS","SCI","SDS","SE","SEQ","SI","SIPAR","SMF","SOC","SOCIN","SOCWK","SOCWL","SPAN","SPCOM","SPD","STAT","STV","SUSM","SWK","SWREN","SYDE","TAX","THTRE","TN","TOUR","TPM","TPPE","TS","UKRAN","UN","UNIV","URBAN","UU","VCULT","WATER","WHMIS","WKRPT","WS","ZOOL"};
