@@ -63,52 +63,49 @@ public class CourseExtract {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		System.out.println(reverse("Hela"));
-//		ArrayList<String> reads = getDataFromFile("pokemon");
-//		System.out.println(reads.get(reads.size()-1));
-//		final BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"));
-//		bw.append("<table>");
-//		bw.newLine();
-//		for(final String s : SUBJECTS) {
-//			final JsonObject obj = getSubjectJson(s);
-//			final JsonArray data = obj.get("data").getAsJsonArray();
-//			JsonObject next = null;
-//			for(int i = 0; i < data.size(); i++) {
-//				next = data.get(i).getAsJsonObject();
-//				
-//				bw.append("    <tr>");
-//				bw.newLine();
-//				
-//				bw.append("        <td>" + s + "</td>");
-//				bw.newLine();
-//				
-//				bw.append("        <td>" + getAsString(next.get("catalog_number")) + "</td>");
-//				bw.newLine();
-//				
-//				bw.append("        <td>" + getAsString(next.get("title")) + "</td>");
-//				bw.newLine();
-//				
-//				bw.append("        <td>" + getAsString(next.get("topic")) + "</td>");
-//				bw.newLine();
-//				
-//				String campus = getAsString(next.get("campus")).split(" ")[0];  // Please god, let campus never be null/empty
-//				
-//				bw.append("        <td>" + (campus.equals("ONLN") ? "Online" : "On campus") + "</td>");
-//				bw.newLine();
-//				
-//				bw.append("        <td>" + campus + "</td>");
-//				bw.newLine();
-//				
-//				bw.append("        <td>" + getAsString(next.get("note")) + "</td>");
-//				bw.newLine();
-//				
-//				bw.append("    </tr>");
-//				bw.newLine();
-//			}
-//		}
-//		bw.append("</table>");
-//		bw.flush();
-//		bw.close();
+		final BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"));
+		bw.append("<table>");
+		bw.newLine();
+		for(final String s : SUBJECTS) {
+			final JsonObject obj = getSubjectJson(s);
+			final JsonArray data = obj.get("data").getAsJsonArray();
+			JsonObject next = null;
+			for(int i = 0; i < data.size(); i++) {
+				next = data.get(i).getAsJsonObject();
+				
+				bw.append("    <tr>");
+				bw.newLine();
+				
+				bw.append("        <td>" + s + "</td>");
+				bw.newLine();
+				
+				bw.append("        <td>" + getAsString(next.get("catalog_number")) + "</td>");
+				bw.newLine();
+				
+				bw.append("        <td>" + getAsString(next.get("title")) + "</td>");
+				bw.newLine();
+				
+				bw.append("        <td>" + getAsString(next.get("topic")) + "</td>");
+				bw.newLine();
+				
+				String campus = getAsString(next.get("campus")).split(" ")[0];  // Please god, let campus never be null/empty
+				
+				bw.append("        <td>" + (campus.equals("ONLN") ? "Online" : "On campus") + "</td>");
+				bw.newLine();
+				
+				bw.append("        <td>" + campus + "</td>");
+				bw.newLine();
+				
+				bw.append("        <td>" + getAsString(next.get("note")) + "</td>");
+				bw.newLine();
+				
+				bw.append("    </tr>");
+				bw.newLine();
+			}
+		}
+		bw.append("</table>");
+		bw.flush();
+		bw.close();
 	}
 
 }
